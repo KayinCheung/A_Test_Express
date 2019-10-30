@@ -14,7 +14,7 @@ The DB instance can be modified by changing the variable in `config.js`
 
 ## Features
 
-POST /history/add
+#### POST /history/add
 
 - Adds watch history for user
 
@@ -29,7 +29,7 @@ POST /history/add
 All fields are required. If fields are missing, the server will return status 400.
 
 
-GET /history
+#### GET /history
 
 | Fields  | Type |
 | ------------- | ------------- |
@@ -39,6 +39,6 @@ GET /history
 All fields are required. Invalid page input will return status 400. 
 
 
-GET /moviedata
+#### GET /moviedata
 
 This returns the mock movie JSON.
