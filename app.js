@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-const uri = process.env.MONGO_URI;
+const uri = require('./config');
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true })
 const connection = mongoose.connection
 connection.once('open', () => {
