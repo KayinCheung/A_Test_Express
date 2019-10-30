@@ -1,4 +1,19 @@
 const router = require('express').Router()
+const images = [
+  "https://user-images.githubusercontent.com/24837709/67777850-4c64e180-fa9d-11e9-8259-e1df66203d1d.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777849-4c64e180-fa9d-11e9-9126-4dec73120061.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777848-4c64e180-fa9d-11e9-873c-516305e20303.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777847-4c64e180-fa9d-11e9-90e7-4409743cafa4.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777846-4bcc4b00-fa9d-11e9-87e1-1eea44cc2d29.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777844-4bcc4b00-fa9d-11e9-9f47-e8cf86683b9e.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777843-4bcc4b00-fa9d-11e9-8875-1328f472bfdf.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777842-4b33b480-fa9d-11e9-94c1-e4d729c09d79.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777841-4b33b480-fa9d-11e9-9947-100abb75023d.jpg",
+  "https://user-images.githubusercontent.com/24837709/67777840-4b33b480-fa9d-11e9-8f46-32530b3646ce.jpg",
+  "https://user-images.githubusercontent.com/24837709/67779189-4243e280-fa9f-11e9-965b-8e57ded6f806.jpg"
+]
+
+
 
 //For mocking API.
 router.route('/').get((req, res) => {
@@ -57,7 +72,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=1",
+                    "url": images[0],
                     "width": 214,
                     "height": 317,
                     "id": "f67e6e8a7478d1dae24e869f3d7081cf"
@@ -133,7 +148,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/",
+                    "url": images[1],
                     "width": 214,
                     "height": 317,
                     "id": "0fed2015ee5eed694899959976bd49d3"
@@ -209,7 +224,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=2",
+                    "url": images[2],
                     "width": 214,
                     "height": 317,
                     "id": "65651bfb058aa122e2a3734ae473484c"
@@ -295,7 +310,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=3",
+                    "url": images[3],
                     "width": 214,
                     "height": 317,
                     "id": "3fcb093562bf2e4b8a428100e825a555"
@@ -366,7 +381,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=4",
+                    "url": images[4],
                     "width": 214,
                     "height": 317,
                     "id": "6e7971f65cdda17e07881c92cccfc453"
@@ -442,7 +457,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=5",
+                    "url": images[5],
                     "width": 214,
                     "height": 317,
                     "id": "549cdb6bbb45b6eef0f52ff03fd7d545"
@@ -518,7 +533,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=7",
+                    "url": images[6],
                     "width": 214,
                     "height": 317,
                     "id": "1811915c31b528983a2a51fb49e1e624"
@@ -584,7 +599,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=8",
+                    "url": images[7],
                     "width": 214,
                     "height": 317,
                     "id": "7ad139a542d955319d4f0a80d83fa158"
@@ -660,7 +675,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=9",
+                    "url": images[8],
                     "width": 214,
                     "height": 317,
                     "id": "0a1e34de28dd78015749bc7a2e2d6b09"
@@ -736,7 +751,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=10",
+                    "url": images[9],
                     "width": 214,
                     "height": 317,
                     "id": "fbe14add426bbcf07f3673f7d9149030"
@@ -817,7 +832,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=11",
+                    "url": images[10],
                     "width": 214,
                     "height": 317,
                     "id": "c45951f923c7daa2c26bd56a59d24c0e"
@@ -893,7 +908,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=12",
+                    "url": images[1],
                     "width": 214,
                     "height": 317,
                     "id": "b24e8451d8a6e648cf8a48d6f7a3a8df"
@@ -969,7 +984,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=13",
+                    "url": images[2],
                     "width": 214,
                     "height": 317,
                     "id": "6c6a06c996cccc5f98b70e519e8ca51e"
@@ -1045,7 +1060,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=14",
+                    "url": images[3],
                     "width": 214,
                     "height": 317,
                     "id": "d481a7dbe0847cd29c9da408be7f094a"
@@ -1116,7 +1131,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=15",
+                    "url": images[4],
                     "width": 214,
                     "height": 317,
                     "id": "500f4cc48182d7d75660a12fbe3278bd"
@@ -1182,7 +1197,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=17",
+                    "url": images[5],
                     "width": 214,
                     "height": 317,
                     "id": "327ab98fdc563ac25b1804e86b057e25"
@@ -1258,7 +1273,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=18",
+                    "url": images[6],
                     "width": 214,
                     "height": 317,
                     "id": "f3d2b20a23f8731eb4af72550bcdc8f9"
@@ -1339,7 +1354,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=19",
+                    "url": images[7],
                     "width": 214,
                     "height": 317,
                     "id": "294bdc4248374324117835b01bc36180"
@@ -1415,7 +1430,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=20",
+                    "url": images[8],
                     "width": 214,
                     "height": 317,
                     "id": "7ac56e9f03f05d3a8f37d9fdf58f7a0f"
@@ -1496,7 +1511,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=21",
+                    "url": images[9],
                     "width": 214,
                     "height": 317,
                     "id": "61c54b37ac44ca04d54cca71fbd47efb"
@@ -1567,7 +1582,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=22",
+                    "url": images[10],
                     "width": 214,
                     "height": 317,
                     "id": "ea77f447a3b67c2a4445bb25e7240af9"
@@ -1663,7 +1678,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=23",
+                    "url": images[1],
                     "width": 214,
                     "height": 317,
                     "id": "f83f884f1175ee7f112cc1a7590b1d63"
@@ -1734,7 +1749,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=24",
+                    "url": images[2],
                     "width": 214,
                     "height": 317,
                     "id": "7775fab68c7e78fb31308d9098989eb4"
@@ -1805,7 +1820,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/",
+                    "url": images[3],
                     "width": 214,
                     "height": 317,
                     "id": "12caac3c2f37d701a6198abfc221ceed"
@@ -1881,7 +1896,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=24",
+                    "url": images[4],
                     "width": 214,
                     "height": 317,
                     "id": "488cce8738773adf4ddf73a756766ae3"
@@ -1957,7 +1972,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=25",
+                    "url": images[5],
                     "width": 214,
                     "height": 317,
                     "id": "97c5cd9230b435a00c60932f2ff3add8"
@@ -2038,7 +2053,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=26",
+                    "url": images[6],
                     "width": 214,
                     "height": 317,
                     "id": "6753893d856068292e1b3d0c77f4786d"
@@ -2119,7 +2134,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=27",
+                    "url": images[7],
                     "width": 214,
                     "height": 317,
                     "id": "f2f9debf358931ca56d4715c0b979a62"
@@ -2185,7 +2200,7 @@ router.route('/').get((req, res) => {
                 "images": [
                   {
                     "type": "cover",
-                    "url": "http://lorempixel.com/214/317/?t=28",
+                    "url": images[8],
                     "width": 214,
                     "height": 317,
                     "id": "a8d4dc8138fa89acbe41a67dcaeb78d6"

@@ -3,15 +3,27 @@ let History = require('../../models/history.model')
 
 const page_size = 10
 
+/*
+Accepts username and page parameter. Returns history data, total number of history pages and current page.
+Page 0 returns the most recent history.
+*/
 router.route('/').get((req, res) => {
-    console.log('get')
+    const page = parseInt(req.query.page)
+    //Error 400 for invalid page inputs (non integer or negative value)
+    if (!(page >= 0)){
+        res.status(400).send({
+            "status": "Invalid input",
+            "info": "Page must be 0 or greater"
+        })
+        return
+    }
+
     History.find({"username": req.query.username})
     .then(history => 
         {
-            const total_pages = Math.ceil((history.length-1)/page_size) - 1
-            const page = parseInt(req.query.page)
-            console.log(page)
+            const total_pages = Math.ceil((history.length)/page_size)
             res.json({
+                "status": "ok",
                 "data" : history.reverse().slice(page*page_size,(page+1)*page_size),
                 "pages": total_pages,
                 "current_page": page
@@ -19,6 +31,7 @@ router.route('/').get((req, res) => {
         })
 })
 
+//Adds new watch history.
 router.route('/add').post((req, res) => {
     const newHistory = new History({
         username: req.body.username,
@@ -28,8 +41,8 @@ router.route('/add').post((req, res) => {
         imageUrl: req.body.imageUrl,
     })
     newHistory.save()
-    .then(() => res.json({"status": "History Added"}))
-    .catch((e) => res.status(400).send({"status": "Invalid inputs", "info": e}))
+    .then(() => res.json({"status": "ok"}))
+    .catch((e) => res.status(400).send({"status": "Invalid input", "info": e}))
 })
 
 module.exports = router
